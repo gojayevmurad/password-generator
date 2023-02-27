@@ -33,7 +33,7 @@ body {
   }
 
   .pass {
-    width: 300px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +61,63 @@ body {
         cursor: pointer;
       }
     }
-    
+    &--indicator {
+      width: 100%;
+      height: 7px;
+      border-radius: 5px;
+
+      &#success {
+        background-color: #66ced6;
+      }
+      &#warning {
+        background-color: orange;
+      }
+      &#danger {
+        background-color: red;
+      }
+    }
+
+    &--length {
+      width: 100%;
+      div,
+      input {
+        width: 100%;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        color: #777;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--change {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      &__group {
+        width: calc(95% / 2);
+        label {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    button{
+        width: 200px;
+        height: 60px;
+        border: none;
+        outline: none;
+        background-color: #66ced6;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
   }
 }

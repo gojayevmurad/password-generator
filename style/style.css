@@ -33,7 +33,7 @@ body {
   margin-bottom: 20px;
 }
 .container .pass {
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,4 +61,58 @@ body {
   color: rgba(85, 85, 85, 0.5137254902);
   transform: translateY(-50%);
   cursor: pointer;
+}
+.container .pass--indicator {
+  width: 100%;
+  height: 7px;
+  border-radius: 5px;
+}
+.container .pass--indicator#success {
+  background-color: #66ced6;
+}
+.container .pass--indicator#warning {
+  background-color: orange;
+}
+.container .pass--indicator#danger {
+  background-color: red;
+}
+.container .pass--length {
+  width: 100%;
+}
+.container .pass--length div,
+.container .pass--length input {
+  width: 100%;
+}
+.container .pass--length div {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  margin-bottom: 10px;
+}
+.container .pass--change {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .pass--change__group {
+  width: 47.5%;
+}
+.container .pass--change__group label {
+  font-size: 1rem;
+}
+.container .pass button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #66ced6;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.container .pass button:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

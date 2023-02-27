@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="header">PASSWORD GENERATOR</p>
+        <div class="pass">
+            <div class="pass--input">
+                <input type="text" disabled value="123adsf%">
+                <i class="fa-solid fa-copy"></i>
+            </div>
+            <div class="pass--indicator"></div>
+            <div class="pass--length">
+                <div>
+                    <p>Password length:</p>
+                    <span class="pass--length__detail"></span>
+                </div>
+                <input type="range" min="1" max="30" value="15" step="1">
+            </div>
+            <div class="pass--change">
+                <div class="pass--change__group">
+                    <input type="checkbox" checked name="lowercase" id="lowercase">
+                    <label for="lowercase">Lowercase</label>
+                </div>
+                <div class="pass--change__group">
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                    <label for="uppercase">Uppercase</label>
+                </div>
+                <div class="pass--change__group">
+                    <input type="checkbox" name="numbers" id="numbers">
+                    <label for="numbers">Numbers</label>
+                </div>
+                <div class="pass--change__group">
+                    <input type="checkbox" name="symbols" id="symbols">
+                    <label for="symbols">Symbols</label>
+                </div>
+                <div class="pass--change__group">
+                    <input type="checkbox" name="exduplicate" id="exduplicate">
+                    <label for="exduplicate">Exclude Dublicates</label>
+                </div>
+                <div class="pass--change__group">
+                    <input type="checkbox" name="space" id="space">
+                    <label for="space">space</label>
+                </div>
+            </div>
+            <button class="generate--btn">GENERATE PASSWORD</button>
+        </div>
+    </div>
+</body>
+
+</html>

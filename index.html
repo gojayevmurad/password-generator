@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>PASSWORD GENERATOR</title>
 </head>
 
 <body>
@@ -15,20 +15,20 @@
         <p class="header">PASSWORD GENERATOR</p>
         <div class="pass">
             <div class="pass--input">
-                <input type="text" disabled value="123adsf%">
-                <i class="fa-solid fa-copy"></i>
+                <input id="password" type="text" disabled >
+                <i class="fa-solid fa-clipboard"></i>
             </div>
             <div class="pass--indicator" id="success"></div>
             <div class="pass--length">
                 <div>
                     <p>Password length:</p>
-                    <span class="pass--length__detail">10</span>
+                    <span class="pass--length__detail">15</span>
                 </div>
                 <input type="range" min="1" max="30" value="15" step="1">
             </div>
             <div class="pass--change">
                 <div class="pass--change__group">
-                    <input type="checkbox" checked name="lowercase" id="lowercase">
+                    <input disabled type="checkbox" checked name="lowercase" id="lowercase">
                     <label for="lowercase">Lowercase</label>
                 </div>
                 <div class="pass--change__group">
@@ -55,6 +55,7 @@
             <button class="generate--btn">GENERATE PASSWORD</button>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
